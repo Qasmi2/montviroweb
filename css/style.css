@@ -1,3 +1,8 @@
+/*----------------- font ------------------------------*/
+@font-face {
+    font-family: myriodpro;
+    src: url(../font/MyriadPro-Bold.otf);
+    } 
 /*----------------- Home page -------------------------- */
 .bg-pic{
          /* Location of the image */
@@ -74,9 +79,14 @@
     right: 16px;
     font-size: 18px;
 }
-
-    
-
+.bottomright {
+    position: absolute;
+    bottom: 70px;
+    right: 190px;
+    font-size: 18px;
+    z-index:1;
+    /* font-family: myriodpro; */
+}
 .left{
     width: 60px;
     height: 100%;
@@ -94,6 +104,13 @@
     z-index: 9999; 
     padding-top: 100px;
 }
+.rightbottomrow{
+    width: 60px;
+    height: 100%;
+    white-space: nowrap; 
+    position: fixed;
+    z-index: 9999; 
+}
 
 .btnleft{
     width: 350px;
@@ -101,9 +118,17 @@
     white-space: nowrap; 
     position: fixed;
     z-index: 9999; 
-    top:50px;
+    top:60px;
 }
-
+.center-text {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    z-index:1;
+}
 	.left ul{
 		padding-top:60px;
 		list-style-type: none;
@@ -115,35 +140,73 @@
 		line-height: 50px;  
 		padding-left: 18px;
 	}
-	/* .left li:hover {
-		background: black; 
-	} */
-
-	/* .left:hover {
-        width: 100px;  
-        }   */
-
-		.left .item-menu {
+	
+	.left .item-menu {
 	        height:112px;
 	        /* overflow:hidden; */
                 color:#fff;
                 transform: rotate(90deg);
                 transform-origin: right top 0;
                 /* float: right; */
-	    }  
+	}  
 	.left a{
 		color: white;
 	    text-decoration: none;
 	    font-weight: bold;
 	} 
-	/* span.menu{
-		padding-left: 17px;
-	} */
-    
-    /* front page button  button  */
-
-    .btn-front{
+	
+.btn-front{
         position: absolute;
         top: 60px;
         right: 125px;
+}
+/* media queris */
+
+@media screen and (max-width: 668px) {
+    .navbar-hidden {
+        display:none;
     }
+    .navbar-icon{
+        background:none !important;
+    }
+   
+}
+@media screen and (max-width: 668px) {
+    .montviro-icon {
+        display:none;
+    }
+    .download-talk-btn{
+        display:none;
+    }
+  
+}
+@media screen and (min-width: 668px) {
+    .footer-menu {
+        display:none;
+    }
+   
+    
+  
+}
+@media screen and (min-width: 668px) {
+    .navbar-frontpage {
+        display:none;
+    }
+    .textcenter{
+        display:none;
+    }
+}
+
+/* -----------------PAGE SHOPING MALL -------------------------*/
+.bg-shoping-mall{
+   
+     /* Location of the image */
+     background-image: url('http://localhost/MontviroWS/images/mainarial1900by481.png');
+     
+     /* This is what makes the background image rescale based on its container's size */
+     background-size: cover;
+     
+     /* Width and height */
+     width:100%;
+     height: 500px;
+}
