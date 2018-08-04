@@ -1,0 +1,149 @@
+/*----------------- Home page -------------------------- */
+.bg-pic{
+         /* Location of the image */
+         background-image: url(images/background-photo.png);
+        
+         /* Image is centered vertically and horizontally at all times */
+         background-position: center center;
+         
+         /* Image doesn't repeat */
+         background-repeat: no-repeat;
+         
+         /* Makes the image fixed in the viewport so that it doesn't move when 
+            the content height is greater than the image height */
+         background-attachment: fixed;
+         
+         /* This is what makes the background image rescale based on its container's size */
+         background-size: cover;
+         
+         /* Pick a solid background color that will be displayed while the background image is loading */
+         background-color:#464646;
+         
+         /* SHORTHAND CSS NOTATION
+          * background: url(background-photo.jpg) center center cover no-repeat fixed;
+          */
+       }
+       
+       /* For mobile devices */
+       @media only screen and (max-width: 767px) {
+        body {
+                 /* The file size of this background image is 93% smaller
+                 * to improve page load speed on mobile internet connections */
+        background-image: url(images/background-photo-mobile-devices.png);
+        }
+}
+
+.bgcolor {
+        background-color: rgba(0, 0, 0, 0.3) !important;
+        width:100px;
+        height:100%;
+}
+/* -------------- left navbar ---------------------*/
+
+ .left-nav{
+        width:50px;
+        height: 100% !important;
+        
+}
+.nav1 {
+        position: relative;
+    }
+    
+    .topleft {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        
+    } 
+    
+.topright {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-size: 18px;
+    }
+.bottomleft {
+        position: absolute;
+        bottom: 900px;
+        left: 8px;
+        font-size: 18px;
+}
+.toprightbtn {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+    
+
+.left{
+    width: 60px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5) !important;
+    white-space: nowrap; 
+    position: fixed;
+    z-index: 9999; 
+}
+.right{
+    width: 60px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5) !important;
+    white-space: nowrap; 
+    position: fixed;
+    z-index: 9999; 
+    padding-top: 100px;
+}
+
+.btnleft{
+    width: 350px;
+    height: 100%;
+    white-space: nowrap; 
+    position: fixed;
+    z-index: 9999; 
+    top:50px;
+}
+
+	.left ul{
+		padding-top:60px;
+		list-style-type: none;
+		text-align: right;
+	}
+	.left li {
+		width: auto;
+		height: 0px;
+		line-height: 50px;  
+		padding-left: 18px;
+	}
+	/* .left li:hover {
+		background: black; 
+	} */
+
+	/* .left:hover {
+        width: 100px;  
+        }   */
+
+		.left .item-menu {
+	        height:112px;
+	        /* overflow:hidden; */
+                color:#fff;
+                transform: rotate(90deg);
+                transform-origin: right top 0;
+                /* float: right; */
+	    }  
+	.left a{
+		color: white;
+	    text-decoration: none;
+	    font-weight: bold;
+	} 
+	/* span.menu{
+		padding-left: 17px;
+	} */
+    
+    /* front page button  button  */
+
+    .btn-front{
+        position: absolute;
+        top: 60px;
+        right: 125px;
+    }
